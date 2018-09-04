@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
     http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
@@ -65,7 +66,7 @@
 			<archive>http://forum.image.sc/</archive>
 		</mailingList>
 	</mailingLists>
-	
+
 	<issueManagement>
 		<system>GitHub Issues</system>
 		<url>https://github.com/tpecot/QuantEvForTrackMate/issues</url>
@@ -102,7 +103,7 @@
 			<groupId>sc.fiji</groupId>
 			<artifactId>TrackMate_</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>net.imagej</groupId>
 			<artifactId>ij</artifactId>
@@ -117,7 +118,21 @@
 			<groupId>net.imglib2</groupId>
 			<artifactId>imglib2</artifactId>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>net.sourceforge.jexcelapi</groupId>
+			<artifactId>jxl</artifactId>
+			<version>2.6.12</version>
+		</dependency>
+
+		<dependency>
+			<groupId>jsc</groupId>
+			<artifactId>jsc</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+
+
 	</dependencies>
 </project>
 

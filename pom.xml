@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+    http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>23.1.1</version>
+		<relativePath />
+	</parent>
+
+	<artifactId>QuantEvForTrackMate</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>plugins/QuantEvForTrackMate.jar</name>
+	<description>QuantEv implementation in TrackMate.</description>
+	<url>https://imagej.net/QuantEvForTrackMate/</url>
+	<inceptionYear>2018</inceptionYear>
+	<organization>
+		<name>INRIA</name>
+	</organization>
+	<licenses>
+		<license>
+			<name>GNU AFFERO GENERAL PUBLIC LICENSE</name>
+			<url>https://www.gnu.org/licenses/agpl-3.0.en.html/</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>tpecot</id>
+			<name>Thierry Pécot</name>
+			<email>pecot@musc.edu</email>
+			<url>http://www.hollingscancercenter.org/research/shared-resources/tsl/</url>
+			<organization>Medical University of South Carolina</organization>
+			<organizationUrl>http://www.hollingscancercenter.org/index.html</organizationUrl>
+			<roles>
+				<role>founder</role>
+				<role>lead</role>
+				<role>developer</role>
+			</roles>
+			<timezone>-4</timezone>
+		</developer>
+		<developer>
+			<id>tinevez</id>
+			<name>Jean-Yves Tinevez</name>
+			<email>jean-yves.tinevez@pasteur.fr</email>
+			<url>http://www.pasteur.fr/ip/easysite/pasteur/fr/recherche/plates-formes-technologiques/imagopole/plates-formes-imagopole/la-plate-forme-d-imagerie-dynamique/equipe-pfid/equipe-pfid-jyt</url>
+			<organization>Institut Pasteur</organization>
+			<organizationUrl>http://www.pasteur.fr/</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+	<contributors>
+		<contributor>
+			<name>None</name>
+		</contributor>
+	</contributors>
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>http://forum.image.sc/</archive>
+		</mailingList>
+	</mailingLists>
+	
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/tpecot/QuantEvForTrackMate/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>Travis CI</system>
+		<url>https://travis-ci.org/tpecot/QuantEvForTrackMate</url>
+	</ciManagement>
+
+	<properties>
+		<imagej.app.directory>../Fiji.app/</imagej.app.directory>
+		<license.licenseName>AGPLv1</license.licenseName>
+		<license.copyrightOwners>INRIA</license.copyrightOwners>
+	</properties>
+
+	<repositories>
+		<!-- NB: for project parent -->
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<scm>
+		<connection>scm:git:git://github.com/tpecot/QuantEvForTrackMate</connection>
+		<developerConnection>scm:git:git@github.com:tpecot/QuantEvForTrackMate</developerConnection>
+		<tag>HEAD</tag>
+		<url>scm:git:git@github.com:tpecot/QuantEvForTrackMate</url>
+	</scm>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>sc.fiji</groupId>
+			<artifactId>TrackMate_</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>ij</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>net.imagej</groupId>
+			<artifactId>imagej-common</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>net.imglib2</groupId>
+			<artifactId>imglib2</artifactId>
+		</dependency>
+		
+	</dependencies>
+</project>
+
